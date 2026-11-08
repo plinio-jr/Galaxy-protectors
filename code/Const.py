@@ -1,0 +1,15 @@
+#C
+COLOR_WHITE = (255, 255, 255)
+COlOR_RED = (255, 0, 0)
+
+#M
+MENU_OPTION = (
+    "NEW GAME 1P",
+    "NEW GAME 2P",
+    "SCORE",
+    "OPTIONS",
+    "EXIT",
+)
+#W
+MIN_WIDTH = 576
+MIN_HEIGHT = 324

@@ -1,22 +1,27 @@
 import pygame
 
 from code.Menu import Menu
-from code.Const import MIN_WIDTH, MIN_HEIGHT
+from code.Level import Level
+from code.EntityFactory import EntityFactory
+from code.Const import WIN_WIDTH, WIN_HEIGHT, MENU_OPTION
 
 
 class Game:
 
     def __init__(self):
         pygame.init()
-        self.window = pygame.display.set_mode(size=(MIN_WIDTH, MIN_HEIGHT))
+        self.window = pygame.display.set_mode(size=(WIN_WIDTH, WIN_HEIGHT))
 
     def run(self):
         while True:
             menu = Menu(self.window)
-            menu.run()
-            pygame.display.flip()
-            for event in pygame.event.get():
-                if event.type == pygame.QUIT:
+            menu_return = menu.run()
 
-                    pygame.quit()
-                    quit()
+            if menu_return in [MENU_OPTION[0], MENU_OPTION[1]]:
+                level = Level(self.window, 'Level1', menu_return)
+                level_return = level.run()
+            elif menu_return == MENU_OPTION[4]:
+                pygame.quit()
+                quit()
+            else:
+                pass

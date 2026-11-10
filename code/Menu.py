@@ -7,7 +7,7 @@ from code.Const import WIN_WIDTH, WIN_HEIGHT, COLOR_WHITE, MENU_OPTION, COlOR_RE
 class Menu:
     def __init__(self, window):
         self.window = window
-        self.surf = pygame.image.load('./asset/menu_background.png')
+        self.surf = pygame.image.load('./asset/menu_background.png').convert_alpha()
         self.rect = self.surf.get_rect(left=0, top=0)
 
 
@@ -17,8 +17,8 @@ class Menu:
         pygame.mixer_music.play(-1)
         while True:
             self.window.blit(source=self.surf, dest=self.rect)
-            self.menu_text(50, "Western", COLOR_WHITE, ((WIN_WIDTH / 2), 70))
-            self.menu_text(50, "Gun", COLOR_WHITE, ((WIN_WIDTH / 2), 120))
+            self.menu_text(50, "Protectors", COLOR_WHITE, ((WIN_WIDTH / 2), 70))
+            self.menu_text(50, "Galaxy", COLOR_WHITE, ((WIN_WIDTH / 2), 120))
 
             for i in range(len(MENU_OPTION)):
 

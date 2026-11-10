@@ -7,7 +7,6 @@ COLOR_BLACK = (0, 0, 0)
 
 #E
 EVENT_ENEMY = pygame.USEREVENT + 1
-
 ENTITY_SPEED = {
     'Level1Bg0': 0,
     'Level1Bg1': 1,
@@ -19,14 +18,52 @@ ENTITY_SPEED = {
     'Level1Bg7': 5,
     'Level1Bg8': 4,
     'Player1': 3,
+    'Player1Shot': 5,
     'Player2': 3,
+    'Player2Shot': 4,
     'Enemy1': 1,
+    'Enemy1Shot':3,
+    'Enemy2': 3,
+    'Enemy2Shot':4,
+    'Enemy3':5,
+    'Enemy3Shot':3,
+}
+
+ENTITY_HEALTH = {
+    'Level1Bg0': 999,
+    'Level1Bg1': 999,
+    'Level1Bg2': 999,
+    'Level1Bg3': 999,
+    'Level1Bg4': 999,
+    'Level1Bg5': 999,
+    'Level1Bg6': 999,
+    'Level1Bg7': 999,
+    'Level1Bg8': 999,
+    'Player1': 500,
+    'Player1Shot': 1,
+    'Player2': 500,
+    'Player2Shot': 1,
+    'Enemy1': 100,
+    'Enemy2': 125,
+    'Enemy3':150,
+    'Enemy1Shot': 1,
+    'Enemy2Shot': 1,
+    'Enemy3Shot':1,
+
+}
+
+ENTITY_SHOT_DELAY = {
+    'Player1': 40,
+    'Player2': 35,
+    'Enemy1': 50,
+    'Enemy2': 55,
+    'Enemy3': 45,
 }
 
 #M
 MENU_OPTION = (
     "NEW GAME 1P - HISTORY",
-    "NEW GAME 2P - DUEL",
+    "NEW GAME 2P - COOPERATIVE",
     "SCORE",
     "CONFIGURATION",
     "EXIT",
@@ -47,6 +84,9 @@ PLAYER_KEY_RIGHT = {'Player1': pygame.K_RIGHT,
 
 PLAYER_KEY_SHOOT = {'Player1': pygame.K_RCTRL,
                     'Player2': pygame.K_LCTRL}
+
+#S
+SPAWN_TIME = 4000
 
 #W
 WIN_WIDTH = 576

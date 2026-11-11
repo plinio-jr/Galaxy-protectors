@@ -9,6 +9,7 @@ COLOR_YELLOW = (255, 255, 0)
 
 #E
 EVENT_ENEMY = pygame.USEREVENT + 1
+EVENT_TIMEOUT = pygame.USEREVENT + 2
 ENTITY_SPEED = {
     'Level1Bg0': 0,
     'Level1Bg1': 1,
@@ -19,6 +20,22 @@ ENTITY_SPEED = {
     'Level1Bg6': 5,
     'Level1Bg7': 5,
     'Level1Bg8': 4,
+    'Level2Bg0': 0,
+    'Level2Bg1': 1,
+    'Level2Bg2': 1,
+    'Level2Bg3': 2,
+    'Level2Bg4': 3,
+    'Level2Bg5': 4,
+    'Level3Bg0': 0,
+    'Level3Bg1': 1,
+    'Level3Bg2': 2,
+    'Level3Bg3': 2,
+    'Level3Bg4': 4,
+    'Level4Bg0': 0,
+    'Level4Bg1': 1,
+    'Level4Bg2': 2,
+    'Level4Bg3': 2,
+    'Level4Bg4': 4,
     'Player1': 3,
     'Player1Shot': 5,
     'Player2': 3,
@@ -41,6 +58,22 @@ ENTITY_HEALTH = {
     'Level1Bg6': 999,
     'Level1Bg7': 999,
     'Level1Bg8': 999,
+    'Level2Bg0': 999,
+    'Level2Bg1': 999,
+    'Level2Bg2': 999,
+    'Level2Bg3': 999,
+    'Level2Bg4': 999,
+    'Level2Bg5': 999,
+    'Level3Bg0': 999,
+    'Level3Bg1': 999,
+    'Level3Bg2': 999,
+    'Level3Bg3': 999,
+    'Level3Bg4': 999,
+    'Level4Bg0': 999,
+    'Level4Bg1': 999,
+    'Level4Bg2': 999,
+    'Level4Bg3': 999,
+    'Level4Bg4': 999,
     'Player1': 500,
     'Player1Shot': 1,
     'Player2': 500,
@@ -72,6 +105,22 @@ ENTITY_DAMAGE = {
     'Level1Bg6': 0,
     'Level1Bg7': 0,
     'Level1Bg8': 0,
+    'Level2Bg0': 0,
+    'Level2Bg1': 0,
+    'Level2Bg2': 0,
+    'Level2Bg3': 0,
+    'Level2Bg4': 0,
+    'Level2Bg5': 0,
+    'Level3Bg0': 0,
+    'Level3Bg1': 0,
+    'Level3Bg2': 0,
+    'Level3Bg3': 0,
+    'Level3Bg4': 0,
+    'Level4Bg0': 0,
+    'Level4Bg1': 0,
+    'Level4Bg2': 0,
+    'Level4Bg3': 0,
+    'Level4Bg4': 0,
     'Player1': 1,
     'Player1Shot': 25,
     'Player2': 1,
@@ -94,6 +143,22 @@ ENTITY_SCORE = {
     'Level1Bg6': 0,
     'Level1Bg7': 0,
     'Level1Bg8': 0,
+    'Level2Bg0': 0,
+    'Level2Bg1': 0,
+    'Level2Bg2': 0,
+    'Level2Bg3': 0,
+    'Level2Bg4': 0,
+    'Level2Bg5': 0,
+    'Level3Bg0': 0,
+    'Level3Bg1': 0,
+    'Level3Bg2': 0,
+    'Level3Bg3': 0,
+    'Level3Bg4': 0,
+    'Level4Bg0': 0,
+    'Level4Bg1': 0,
+    'Level4Bg2': 0,
+    'Level4Bg3': 0,
+    'Level4Bg4': 0,
     'Player1': 0,
     'Player1Shot': 0,
     'Player2': 0,
@@ -105,6 +170,9 @@ ENTITY_SCORE = {
     'Enemy2Shot': 0,
     'Enemy3Shot':0,
 }
+
+#G
+#GAME_OVER = 5000
 
 #M
 MENU_OPTION = (
@@ -133,6 +201,10 @@ PLAYER_KEY_SHOOT = {'Player1': pygame.K_RCTRL,
 
 #S
 SPAWN_TIME = 4000
+
+#T
+TIMEOUT_STEP = 100
+TIMEOUT_LEVEL = 30000
 
 #W
 WIN_WIDTH = 576
